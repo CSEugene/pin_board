@@ -1,4 +1,4 @@
-# -*- mode: ruby -*-
+	# -*- mode: ruby -*-
 # vi: set ft=ruby :
 
 # All Vagrant configuration is done below. The "2" in Vagrant.configure
@@ -68,4 +68,7 @@ Vagrant.configure(2) do |config|
   #   sudo apt-get update
   #   sudo apt-get install -y apache2
   # SHELL
+  
+  config.vm.network :forwarded_port, guest: 1234, host: 1234
+
 end
